@@ -42,21 +42,27 @@ class _DetailPageState extends State<DetailPage> {
           ),
 
           // زر الرجوع
-          Positioned(
-            top: 40,
-            left: 20,
-            child: Material(
-              elevation: 3.0,
-              borderRadius: BorderRadius.circular(30.0),
-              child: Container(
-                padding: const EdgeInsets.all(8),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(30.0),
-                ),
-                child: const Icon(
-                  Icons.arrow_back_ios_new_rounded,
-                  color: Colors.black,
+          GestureDetector( //تمت إضافتها الخميس لربط الزر بالرجوع للهوم 
+            onTap: () {
+              Navigator.pop(context);
+            },
+              
+            child: Positioned(
+              top: 40,
+              left: 20,
+              child: Material(
+                elevation: 3.0,
+                borderRadius: BorderRadius.circular(30.0),
+                child: Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(30.0),
+                  ),
+                  child: const Icon(
+                    Icons.arrow_back_ios_new_rounded,
+                    color: Colors.black,
+                  ),
                 ),
               ),
             ),

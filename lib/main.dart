@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movibookingapp/pages/booking.dart';
 import 'package:movibookingapp/pages/detail_page.dart';
 import 'package:movibookingapp/pages/home.dart';
 
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: DetailPage()
+      home:Booking()
     );
   }
 }
